@@ -1,0 +1,30 @@
+# exclude
+
+node_modules
+# Keep environment variables out of version control
+.env
+.next/
+.vercel
+.github/*
+.DS_Store
+*.blend[0-9]
+resources/three/blender/*.blend[0-9]
+
+# playwright
+screenshots/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+
+# excemption 
+!.github/images
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# excel presave
+~$*.xlsx
