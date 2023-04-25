@@ -206,7 +206,7 @@ export default function Home() {
             Mit digitalen Ökosystemen die Herausforderungen unserer Zeit lösen”.
           </Title>
           <Paragraph>
-            Egal ob Energiewende, Verkehrswende, Erhalt der Demokratie, sozialer Zusammenhalt oder Klimafolgenanpassung. Die großen Herausforderungen unserer Zeit lassen sich nur lösen, wenn wir übergreifende Kommunikations- und Organisationswege finden. Zu diesem Zweck entwickeln wir digitale Ökosysteme, die in der Lage sind, viele verschiedene Akteursgruppen zusammen zu bringen und sie gemeinsam strategisch handeln zu lassen.
+            Egal ob Energiewende, Verkehrswende, Erhalt der Demokratie, sozialer Zusammenhalt oder Klimafolgenanpassung. Die großen Herausforderungen unserer Zeit lassen sich nur lösen, wenn wir übergreifende Kommunikations- und Organisationswege finden. Zu diesem Zweck entwickeln wir digitale Ökosysteme, die in der Lage sind, viele verschiedene Akteursgruppen zusammenzubringen und sie gemeinsam strategisch handeln zu lassen.
           </Paragraph>
         </SectionContent>
 
