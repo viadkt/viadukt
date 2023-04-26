@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Path: styles/globals.css */
+* {
+  box-sizing: border-box;
+}
+
+
+.bottom-safe-area{
+  margin-bottom: env(safe-area-inset-bottom);
+}
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;
