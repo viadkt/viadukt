@@ -4,6 +4,4 @@ export default function SectionImage({className, children}) {
         {children}
     </div>
   )
-
-  
 }

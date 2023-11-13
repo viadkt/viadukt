@@ -1,35 +1,21 @@
 import Image from "next/image"
-
-import Section from "../components/section"
-import SectionImage from "../components/sectionImage"
-import SectionContent from "../components/sectionContent"
-import Title from "../components/ui/title"
-import Paragraph from "../components/ui/paragraph"
-import Button from "../components/ui/button"
-
-import { Inter } from "next/font/google"
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue
-} from "framer-motion";
-import { useState, useRef, useEffect, Children } from "react"
 import Link from "next/link"
+import { Inter } from "next/font/google"
+import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react"
 
+import Section from "/components/section"
+import SectionImage from "/components/sectionImage"
+import SectionContent from "/components/sectionContent"
+import Title from "/components/ui/title"
+import Paragraph from "/components/ui/paragraph"
+import Button from "/components/ui/button"
 
 const inter = Inter({ subsets: ["latin"] })
-
-// state to keep track of the current section
-
-
-
 
 export default function Home() {
   const [visibleSectionId, setVisibleSectionId] = useState(null);
   const [color, setColor] = useState("#06B6D4");
-  const sectionRefs = useRef([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,9 +50,7 @@ export default function Home() {
   return (
     <>
     <main className={`grid min-h-screen overflow-hidden  ${inter.className}`}>
-
       <nav className="fixed top-3 justify-end gap-4 z-20 flex container mx-auto w-full text-lg items-center ">
-        
         <h2 
           className=" uppercase text-xl lg:text-2xl z-30" 
           style={{color: color}}>
@@ -90,22 +74,16 @@ export default function Home() {
               <path fillRule="evenodd" clipRule="evenodd" d="M8.3705 5.97559V0.975586H23.3705H28.3705V4.51118L28.3705 4.51121L28.3705 4.51123V5.97559L28.3705 20.9756H23.3705V9.51123L3.53554 29.3462L0 25.8107L19.8351 5.97559H8.3705Z" fill={color}/>
           </svg>
         </a>
-
       </nav>
-
-
 
       {/* Header */}
       <header className="h-screen w-screen relative  z-30 bg-white overflow-hidden">
-
         <div className="container items-center px-6 mx-auto flex flex-col w-full justify-center align-center flex-wrap h-full pb-20">
           <h1 className="text-4xl 2xl:text-5xl  font-bold tracking-tighter  mb-16">
             viadukt
           </h1>
 
-
           <div className=" flex">
-
             <a href="#projects" className="flex flex-col items-center hover:animate-pulse uppercase text-xl lg:text-2xl mr-4 lg:mr-8 text-cyan-900 hover:text-cyan-500 transition-color">
               <svg className="mb-2 lg:mb-3 w-7 h-7 fill-current"  viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.5713 0.656738H13.5713V10.6924L6.47489 3.59598L2.93936 7.13152L10.0359 14.228H0V19.228H10.0356L2.93945 26.3242L6.47499 29.8598L13.5713 22.7634V32.7993H18.5713V22.7634L25.6676 29.8598L29.2031 26.3242L22.1069 19.228H32.1426V14.228H22.1067L29.2032 7.13152L25.6677 3.59598L18.5713 10.6924V0.656738Z" />
@@ -126,9 +104,7 @@ export default function Home() {
               </svg>
               Kontakt
             </a>
-
           </div>
-
 
             <Button href="https://energiequartier.de/" target="_blank" rel="noopener noreferrer" className="mt-20 text-cyan-500 mr-2">
               <span className="font-light">Gebäudeanalyse </span>
@@ -148,12 +124,7 @@ export default function Home() {
                   <path fillRule="evenodd" clipRule="evenodd" d="M8.3705 5.97559V0.975586H23.3705H28.3705V4.51118L28.3705 4.51121L28.3705 4.51123V5.97559L28.3705 20.9756H23.3705V9.51123L3.53554 29.3462L0 25.8107L19.8351 5.97559H8.3705Z" />
               </motion.svg>
             </div>
-
         </div>
-
-
-
-       
       </header>
 
       {/* Sticky Navigation */}
@@ -182,9 +153,6 @@ export default function Home() {
           </div>
         </SectionImage>
       </Section>
-
-
-
 
       <Section id="" color="#F59E0B" darkColor="#164E63">
         <SectionContent>
@@ -255,7 +223,6 @@ export default function Home() {
             </div>
           </div>
           
-
           <div className="absolute lg:left-60 lg:top-[450px]  lg:w-[400px]  lg:h-[320px]  mx-auto  z-50">
             <Image 
               src="/images/mission/office.png"
@@ -265,7 +232,6 @@ export default function Home() {
           </div>
         </SectionImage>
       </Section>
-
 
       <Section id="contact" color="#F59E0B" >
         <SectionContent>
@@ -283,7 +249,6 @@ export default function Home() {
             Wir sind auf der Suche nach talentierten Mitarbeiter:innen. <br/> Werde Teil unseres Teams und leiste mit uns den Beitrag zur Energiewende in Deutschland. 
           </Paragraph>
         </SectionContent>
-
 
         <div className=" relative lg:fixed  right-0 lg:bottom-0 h-[33.33vh]  lg:h-screen  w-full lg:w-[50vw] ">
           <Image 
@@ -308,7 +273,7 @@ export default function Home() {
         <h3 className="font-bold">viadukt GmbH</h3>
         <p>
         Moritzstraße,<br />
-        142117 Wuppertal<br /><br />
+        42117 Wuppertal<br /><br />
         Hinter der Toreinfahrt finden Sie Parkplätze der Firma Küpper.
         </p>
       </div>
@@ -320,6 +285,5 @@ export default function Home() {
       </Link>
     </div>
   </>
-  
   )
 }

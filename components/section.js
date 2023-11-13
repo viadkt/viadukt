@@ -1,12 +1,4 @@
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue
-} from "framer-motion";
-
-
+import { motion} from "framer-motion";
 
 export default function Section({id, darkColor, preTitle, title, text, children}) {
     return (

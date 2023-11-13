@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-
 export default function Title({title, preTitle, color, darkColor, children, className}) {
     return (
         <motion.div 
@@ -17,4 +16,3 @@ export default function Title({title, preTitle, color, darkColor, children, clas
 
     )
 }
-

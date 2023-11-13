@@ -1,7 +1,3 @@
-
-import { motion } from "framer-motion";
-
-
 export default function Button({href, target, rel, children, className}) {
     return (
         <a href={href} target={target} rel={rel} className={`inline-flex gap-2  px-3 h-9  items-center rounded-full text-center  bg-neutral-50 font-semibold hover:bg-neutral-100 ${className} `}>
